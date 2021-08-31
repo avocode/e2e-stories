@@ -1,0 +1,4 @@
+name: Checks current page url
+
+steps: 
+  - urlIs: https://jakpsatweb.cz/

@@ -1,0 +1,6 @@
+name: Checks if css selector element contains specific text
+
+steps: 
+  - textIs:
+      el: '[id="vyhpole"]'
+      text: testovani

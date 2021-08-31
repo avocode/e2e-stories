@@ -1,0 +1,8 @@
+name: clicks a css selector
+
+steps:
+  - screenshot: 
+      path: playground/spec/image.jpeg
+      type: jpeg
+      fullPage: true
+    

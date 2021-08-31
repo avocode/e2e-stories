@@ -1,0 +1,6 @@
+name: Fills a css selector element with text
+
+steps:
+  - fill: 
+      el: '[id="vyhpole"]'
+      text: testovani

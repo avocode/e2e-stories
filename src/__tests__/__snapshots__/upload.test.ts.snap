@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Converts yaml upload command to puppeteer testing code 1`] = `
+"describe(\`Uploads file to a css selector input element\`, function() {
+	let context
+	let random
+	let page
+
+	beforeEach(async () => {
+		context = await browser.createIncognitoBrowserContext()
+		page = await context.newPage()
+		random = +new Date
+		page.setExtraHTTPHeaders({})
+
+		return true
+	})
+
+	afterEach(async () => {
+		await page.close()
+		return true
+	})
+
+	jest.retryTimes(3)
+	jest.setTimeout(50000)
+	it(\`Uploads file to a css selector input element\`, async () => {
+		await page.waitForSelector(\`[id=\\"vyhpole\\"]\`, { timeout: 10000 })
+		const inputElement = await page.$(\`[id=\\"vyhpole\\"]\`);
+		await inputElement.uploadFile('/Users/frantak/Documents/prog/puppeteer-stories/test/stories/files/testCssFile.css');
+		return true
+	})
+})"
+`;

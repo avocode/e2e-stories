@@ -1,0 +1,6 @@
+name: Selects an css selector element like an input (radio groups or menus)
+
+steps:
+  - select:
+      el: '[id="pickAItem"]'
+      text: item

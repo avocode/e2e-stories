@@ -1,0 +1,4 @@
+name: Checks if css selector exists on page
+
+steps: 
+  - exists: '[id="logo"]'

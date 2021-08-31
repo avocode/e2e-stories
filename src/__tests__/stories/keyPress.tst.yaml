@@ -1,0 +1,5 @@
+name: Presses a key on page
+
+steps: 
+  - keyPress: Enter
+  

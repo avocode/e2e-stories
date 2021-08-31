@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Converts yaml click command to puppeteer testing code 1`] = `
+"describe(\`clicks a css selector\`, function() {
+	let context
+	let random
+	let page
+
+	beforeEach(async () => {
+		context = await browser.createIncognitoBrowserContext()
+		page = await context.newPage()
+		random = +new Date
+		page.setExtraHTTPHeaders({})
+
+		return true
+	})
+
+	afterEach(async () => {
+		await page.close()
+		return true
+	})
+
+	jest.retryTimes(3)
+	jest.setTimeout(50000)
+	it(\`clicks a css selector\`, async () => {
+		await page.waitForSelector(\`[id=\\"logo\\"]\`, { timeout: 10000 })
+		await page.click(\`[id=\\"logo\\"]\`, { clickCount: 1 })
+		return true
+	})
+})"
+`;

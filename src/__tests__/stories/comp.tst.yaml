@@ -1,0 +1,4 @@
+name: loads a component with visit url command
+
+steps:
+  - component: comp.test.component#url=https://avocode.com//

@@ -1,0 +1,4 @@
+name: Double clicks a css selector
+
+steps:
+  - dblClick: '[id="logo"]'

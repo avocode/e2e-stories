@@ -1,0 +1,5 @@
+name: visits avocode webpage
+
+steps:
+  - visit: ${url}
+  - component: nested.test.component

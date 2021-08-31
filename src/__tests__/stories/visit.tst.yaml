@@ -1,0 +1,4 @@
+name: Visits a website jakpsatweb
+
+steps:
+  - visit: https://www.jakpsatweb.cz/

@@ -1,0 +1,4 @@
+name: Checks if css selector is not present on page
+
+steps:
+  - notExists: '[id="vyhpole"]'

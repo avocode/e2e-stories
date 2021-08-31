@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Converts yaml select command to puppeteer testing code 1`] = `
+"describe(\`Selects an css selector element like an input (radio groups or menus)\`, function() {
+	let context
+	let random
+	let page
+
+	beforeEach(async () => {
+		context = await browser.createIncognitoBrowserContext()
+		page = await context.newPage()
+		random = +new Date
+		page.setExtraHTTPHeaders({})
+
+		return true
+	})
+
+	afterEach(async () => {
+		await page.close()
+		return true
+	})
+
+	jest.retryTimes(3)
+	jest.setTimeout(50000)
+	it(\`Selects an css selector element like an input (radio groups or menus)\`, async () => {
+		await page.select(\`[id=\\"pickAItem\\"]\`, \`item\`)
+		return true
+	})
+})"
+`;

@@ -1,0 +1,4 @@
+name: Pauses a test for specific amount of time (in ms)
+
+steps: 
+  - pause: 5000

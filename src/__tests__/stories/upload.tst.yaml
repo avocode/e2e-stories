@@ -1,0 +1,6 @@
+name: Uploads file to a css selector input element
+
+steps: 
+  - upload: 
+      el: '[id="vyhpole"]'
+      file: testCssFile.css

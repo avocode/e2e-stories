@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Converts yaml urlIs command to puppeteer testing code 1`] = `
+"describe(\`Checks current page url\`, function() {
+	let context
+	let random
+	let page
+
+	beforeEach(async () => {
+		context = await browser.createIncognitoBrowserContext()
+		page = await context.newPage()
+		random = +new Date
+		page.setExtraHTTPHeaders({})
+
+		return true
+	})
+
+	afterEach(async () => {
+		await page.close()
+		return true
+	})
+
+	jest.retryTimes(3)
+	jest.setTimeout(50000)
+	it(\`Checks current page url\`, async () => {
+		expect(await page.url()).toEqual(\`https://jakpsatweb.cz/\`)
+		return true
+	})
+})"
+`;

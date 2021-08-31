@@ -1,0 +1,4 @@
+name: nested component which navigates to avcd.cz
+
+steps:
+ - visit: https://avcd.cz
