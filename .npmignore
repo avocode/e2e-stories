@@ -1,4 +1,6 @@
 playground/
+/.github
+src/
 coverage/
 src/__tests__/
 tsconfig.json

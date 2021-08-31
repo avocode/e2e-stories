@@ -1,14 +1,15 @@
 {
   "name": "e2e-stories",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "",
   "main": "index.js",
+  "repository": "https://github.com/avocode/e2e-stories/",
+  "author": "Petr Brzek <petrbrzek@avocode.com>",
+  "license": "MIT",
   "scripts": {
     "test": "jest",
     "convert": "node index.js"
   },
-  "author": "Petr Brzek",
-  "license": "MIT",
   "dependencies": {
     "del": "^6.0.0",
     "dotenv": "^10.0.0",

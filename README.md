@@ -6,7 +6,7 @@
 
 E2E-Stories is a tool, which aims to make web testing using Jest and Puppeteer easy to use, without strong programming skills.
 
-Test writing with this tool is faster and easier than writing regular tests because YAML is easy to write and understand, GUI testing tools are slow, we've got that covered, convert time of the test is only limited by the power of your machine and in most cases, convert doesn't take more than 1 second, and one more good fact, this tool is free 😉
+Test writing with this tool is faster and easier than writing regular tests because YAML is easy to write and understand, GUI testing tools are slow, we've got that covered, convert time of the test is only limited by the power of your machine and in most cases, converting doesn't take more than 1 second, and one more good fact, this tool is free 😉
 
 ## Getting started
 * `yarn add -D e2e-stories` or `npm install -D e2e-stories`
@@ -20,7 +20,7 @@ Test writing with this tool is faster and easier than writing regular tests beca
 +    "test": "jest"
 +  },
   "dependencies": {
-    "e2e-stories": "^0.1.2"
+    "e2e-stories": "^0.1.3"
   }
 }
 ```
@@ -39,7 +39,7 @@ Test writing with this tool is faster and easier than writing regular tests beca
 +    "testRunner": "jest-circus/runner"
 +  },
   "dependencies": {
-    "e2e-stories": "^0.1.2"
+    "e2e-stories": "^0.1.3"
   }
 }
 ```
@@ -68,7 +68,7 @@ module.exports = {
 const convertStories = require('e2e-stories')
 
 convertStories({
-  out: './test/spec', // path to JS test files o
+  out: './test/spec', // path to JS test files output folder
 })
 ```
 
@@ -87,12 +87,13 @@ convertStories({
     "testRunner": "jest-circus/runner"
   },
   "dependencies": {
-    "e2e-stories": "^0.1.2"
+    "e2e-stories": "^0.1.3"
   }
 }
 ```
 
 * More related optional settings to converStories method can be found here: 
+  * `out`: `string` - _required_ - path to where the JS test files should be saved.
   * `outputType`: `string` - currently only puppeteer is supported, other tools coming soon.
   * `pathToYaml`: `glob pattern string` - this option specifies where e2e-stories should look for your yaml stories and components. Default pattern is: `'*(playground|test|tests|spec|src|build)/**/stories/**/*.+(yaml|yml)'`
   * `together`: `boolean` - If you want to have all your tests from your stories in one file, set this option to `true`. Default is `false`.
