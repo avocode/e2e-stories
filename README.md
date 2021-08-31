@@ -9,7 +9,7 @@ E2E-Stories is a tool, which aims to make web testing using Jest and Puppeteer e
 Test writing with this tool is faster and easier than writing regular tests because YAML is easy to write and understand, GUI testing tools are slow, we've got that covered, convert time of the test is only limited by the power of your machine and in most cases, convert doesn't take more than 1 second, and one more good fact, this tool is free 😉
 
 ## Getting started
-* `yarn add -D @avocode/e2e-stories` or `npm install -D @avocode/e2e-stories`
+* `yarn add -D e2e-stories` or `npm install -D e2e-stories`
 * Add Jest command to your `package.json` \(Jest is already installed with this dependency\)
 
 ```diff
@@ -20,7 +20,7 @@ Test writing with this tool is faster and easier than writing regular tests beca
 +    "test": "jest"
 +  },
   "dependencies": {
-    "@avocode/e2e-stories": "^0.1.0"
+    "e2e-stories": "^0.1.2"
   }
 }
 ```
@@ -39,7 +39,7 @@ Test writing with this tool is faster and easier than writing regular tests beca
 +    "testRunner": "jest-circus/runner"
 +  },
   "dependencies": {
-    "@avocode/e2e-stories": "^0.1.0"
+    "e2e-stories": "^0.1.2"
   }
 }
 ```
@@ -65,7 +65,7 @@ module.exports = {
   * This is the minimal example of using convert
 
 ```javascript
-const convertStories = require('@avocode/e2e-stories')
+const convertStories = require('e2e-stories')
 
 convertStories({
   out: './test/spec', // path to JS test files o
@@ -87,7 +87,7 @@ convertStories({
     "testRunner": "jest-circus/runner"
   },
   "dependencies": {
-    "@avocode/e2e-stories": "^0.1.0"
+    "e2e-stories": "^0.1.2"
   }
 }
 ```
