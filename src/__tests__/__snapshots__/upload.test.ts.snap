@@ -25,7 +25,7 @@ exports[`Converts yaml upload command to puppeteer testing code 1`] = `
 	it(\`Uploads file to a css selector input element\`, async () => {
 		await page.waitForSelector(\`[id=\\"vyhpole\\"]\`, { timeout: 10000 })
 		const inputElement = await page.$(\`[id=\\"vyhpole\\"]\`);
-		await inputElement.uploadFile('/Users/frantak/Documents/prog/puppeteer-stories/test/stories/files/testCssFile.css');
+		await inputElement.uploadFile('/home/runner/work/e2e-stories/e2e-stories/test/stories/files/testCssFile.css');
 		return true
 	})
 })"
