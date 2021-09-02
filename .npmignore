@@ -2,11 +2,10 @@ playground/
 /.github
 src/
 coverage/
-src/__tests__/
 tsconfig.json
 jest.config.js
 jest.puppeteer.config.js
-puppeteer-convert-stories.js
+convert-stories.js
 .gitlab-ci.yml
 .env
 .vscode

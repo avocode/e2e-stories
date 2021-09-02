@@ -4,6 +4,6 @@ test/
 build/
 coverage/
 .vscode
-puppeteer-convert-stories.js
+convert-stories.js
 .DS_Store
 .env

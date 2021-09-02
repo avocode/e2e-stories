@@ -61,7 +61,7 @@ module.exports = {
 
 * As you can see, you can use env variable to change the headlessness of the Chromium browser.
 * **Setup is almost over**. One more thing is to create a convert file, that will convert Yaml stories to proper JS tests.
-  * Create a file called `puppeteer-convert-stories.js`
+  * Create a file called `convert-stories.js`
   * This is the minimal example of using convert
 
 ```javascript
@@ -80,7 +80,7 @@ convertStories({
   "main": "index.js",
   "scripts": {
     "test": "jest",
-+   "convert": "node puppeteer-convert-stories.js"
++   "convert": "node convert-stories.js"
   },
   "jest": {
     "preset": "jest-puppeteer",
