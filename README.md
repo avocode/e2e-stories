@@ -164,12 +164,6 @@ Inside **steps** you can use the following commands:
 
 ## Local variables
 
-* To use variables create **.env** file in the root
-* Store variables in the classic form:
+**Temporarily disabled**
 
-  ```text
-  URL=https://avcd.cz
-  ```
-
-* Use them in tests simply by including e.g. `${process.env.URL}`
-
+_Will be fixed soon._
