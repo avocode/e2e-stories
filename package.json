@@ -1,7 +1,8 @@
 {
   "name": "e2e-stories",
-  "version": "0.1.3",
-  "description": "",
+  "version": "0.1.5",
+  "description": "E2E testing with Jest and Puppeteer, flavored with simplified Yaml syntax.",
+  "keywords": ["jest", "puppeteer", "e2e-testing", "testing", "stories", "avocode"],
   "main": "index.js",
   "repository": "https://github.com/avocode/e2e-stories/",
   "contributors": [
