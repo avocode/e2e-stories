@@ -4,7 +4,17 @@
   "description": "",
   "main": "index.js",
   "repository": "https://github.com/avocode/e2e-stories/",
-  "author": "Petr Brzek <petrbrzek@avocode.com>",
+  "contributors": [
+    { 
+      "name": "Petr Brzek",
+      "email": "petrbrzek@avocode.com"
+    },
+    {
+      "name": "František Kočí",
+      "email": "efraim9@email.cz",
+      "url": "https://efraim.tech"
+    }
+  ],
   "license": "MIT",
   "scripts": {
     "test": "jest",
