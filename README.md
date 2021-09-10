@@ -1,6 +1,8 @@
 # E2E-Stories
+![](https://github.com/avocode/e2e-stories/actions/workflows/node.js.yml/badge.svg)
 
 > E2E testing with Jest and Puppeteer, flavored with simplified Yaml syntax.
+
 
 ## Info
 
