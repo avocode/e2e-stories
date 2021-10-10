@@ -124,9 +124,9 @@ steps:
 
 ## Stories options
 
-* **name** - `string` - required param for all stories, name of your story, be descriptive and creative, explain what it does
-* **skip** - `boolean` - optional param for skipping the current story
-* **testSettings** - `object {retryTimes: number, setTimeout: number}` - optional param for changing test settings of testing tool (currently Jest). Default values:
+* **name** - `String` - required param for all stories, name of your story, be descriptive and creative, explain what it does
+* **skip** - [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type) - optional param for skipping the current story
+* **testSettings** - `Object {retryTimes: Number, setTimeout: Number}` - optional param for changing test settings of testing tool (currently Jest). Default values:
   * `retryTimes`: 3 - How many times tests are re-tested if test fails.
   * `setTimeout`: 50000 - Delay in ms before test fails.
 * **steps** - required param for all stories
@@ -141,24 +141,24 @@ Inside **steps** you can use the following commands:
   * Also it's possible to pass options to components like this:
     * `login.component#username=${bestTesterEver}#pass=${process.env.PASS}`
     * You can reference those options like regular variables.
-* **visit** - `URL string`.
-* **click** - `CSS selector string`.
-* **dblClick** - `CSS selector string`.
-* **urlIs** - `URL string`.
-* **exists** - `CSS selector string`.
-* **notExists** - `CSS selector string`.
-* **pause** - `Number` ms.
-* **fill** - `Object { el: CSS Selector, text: String }`
+* **visit** - `URL` - `String`.
+* **click** - [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) - `String`.
+* **dblClick** - [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) - `String`.
+* **urlIs** - `URL` - `String`.
+* **exists** - [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) - `String`.
+* **notExists** - [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) - `String`.
+* **pause** - `Number` in `miliseconds`.
+* **fill** - `Object { el:` [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)`, text: String }`
   * You can use `{ TIMESTAMP }` to add "random" hash to the String.
-* **textIs** - `Object { el: CSS Selector, text: String }`
-* **select** - `Object { el: CSS Selector, text: String }`
+* **textIs** - `Object { el:` [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)`, text: String }`
+* **select** - `Object { el:` [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)`, text: String }`
   * Use for selecting an option from a dropdown element.
-* **upload** - `Object { el: CSS Selector, file: filename String }`
+* **upload** - `Object { el:` [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)`, file: filename String }`
   * Enter full filename with extension.
   * CSS Selector must match an input element.
   * Store your files in `./test/stories/files`
 * **keyPress** - `String` - \([US keyboard keys](./src/core/types.ts#L133)\)
-* **screenshot** - `Object { path: string, type: string, fullPage: boolean }`
+* **screenshot** - `Object { path: String, type: String, fullPage:` [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type) `}`
   * `path` - Where the file will be saved, if the path is wrong, your image won't saved!
   * `type` - Type of the image (only jpeg or png), default is png format, jpeg can have better quality than png.
   * `fullPage` - Allows you to capture the whole page from top to the bottom without scrolling, 
