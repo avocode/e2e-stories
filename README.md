@@ -37,6 +37,7 @@ Test writing with this tool is faster and easier than writing regular tests beca
     "test": "jest"
   },
 +  "jest": {
++    "setupFiles":  ["dotenv/config"],
 +    "preset": "jest-puppeteer",
 +    "testRunner": "jest-circus/runner"
 +  },
@@ -85,6 +86,7 @@ convertStories({
 +   "convert": "node convert-stories.js"
   },
   "jest": {
+    "setupFiles":  ["dotenv/config"],
     "preset": "jest-puppeteer",
     "testRunner": "jest-circus/runner"
   },
@@ -166,6 +168,12 @@ Inside **steps** you can use the following commands:
 
 ## Local variables
 
-**Temporarily disabled**
+* To use variables create **.env** file in the root
+* Store variables in the classic form:
 
-_Will be fixed soon._
+  ```text
+  URL=https://example.com
+  ```
+
+* Use them in tests simply by including e.g. `${process.env.URL}`
+
