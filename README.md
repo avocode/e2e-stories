@@ -8,11 +8,11 @@
 
 E2E-Stories is a tool, which aims to make web testing using Jest and Puppeteer easy to use, without strong programming skills.
 
-Test writing with this tool is faster and easier than writing regular tests because YAML is easy to write and understand, GUI testing tools are slow, we've got that covered, convert time of the test is only limited by the power of your machine and in most cases, converting doesn't take more than 1 second, and one more good fact, this tool is free 😉
+Test writing with this tool is faster and easier than writing regular tests because YAML is easy to write and understand, GUI testing tools are slow, and we've got that covered, converting in most cases doesn't take more than one second, and most importantly, this tool is free to use 😉
 
 ## Getting started
 * `yarn add -D e2e-stories` or `npm install -D e2e-stories`
-* Add Jest command to your `package.json` \(Jest is already installed with this dependency\)
+* Add Jest command to your `package.json` \(Jest is already installed with this package\)
 
 ```diff
 {
@@ -27,7 +27,7 @@ Test writing with this tool is faster and easier than writing regular tests beca
 }
 ```
 
-* Add Jest config for puppeteer to package.json
+* Add Jest configuration to package.json, or you can create jest.config.js file.
 
 ```diff
 {
@@ -65,7 +65,7 @@ module.exports = {
 * As you can see, you can use env variable to change the headlessness of the Chromium browser.
 * **Setup is almost over**. One more thing is to create a convert file, that will convert Yaml stories to proper JS tests.
   * Create a file called `convert-stories.js`
-  * This is the minimal example of using convert
+  * This is the minimal example of using convertStories
 
 ```javascript
 const convertStories = require('e2e-stories')
@@ -74,6 +74,11 @@ convertStories({
   out: './test/spec', // path to JS test files output folder
 })
 ```
+* More related optional settings to converStories method can be found here: 
+  * `out`: [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#string_type) - _required_ - path to where the JS test files should be saved.
+  * `outputType`: [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#string_type) - currently only puppeteer is supported, other tools coming soon.
+  * `pathToYaml`: `Glob pattern` [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#string_type) - this option specifies where e2e-stories should look for your yaml stories and components. Default pattern is: `'*(playground|test|tests|spec|src|build)/**/stories/**/*.+(yaml|yml)'`
+  * `together`: [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type) - If you want to have all your tests from your stories in one file, set this option to `true`. Default is `false`.
 
 * It's a good idea to add this script to `package.json`. For example like this:
 
@@ -96,11 +101,7 @@ convertStories({
 }
 ```
 
-* More related optional settings to converStories method can be found here: 
-  * `out`: `string` - _required_ - path to where the JS test files should be saved.
-  * `outputType`: `string` - currently only puppeteer is supported, other tools coming soon.
-  * `pathToYaml`: `glob pattern string` - this option specifies where e2e-stories should look for your yaml stories and components. Default pattern is: `'*(playground|test|tests|spec|src|build)/**/stories/**/*.+(yaml|yml)'`
-  * `together`: `boolean` - If you want to have all your tests from your stories in one file, set this option to `true`. Default is `false`.
+
 
 **SETUP IS OVER**
 
