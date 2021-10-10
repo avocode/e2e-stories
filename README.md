@@ -22,7 +22,7 @@ Test writing with this tool is faster and easier than writing regular tests beca
 +    "test": "jest"
 +  },
   "dependencies": {
-    "e2e-stories": "^0.1.3"
+    "e2e-stories": "^0.1.6"
   }
 }
 ```
@@ -41,7 +41,7 @@ Test writing with this tool is faster and easier than writing regular tests beca
 +    "testRunner": "jest-circus/runner"
 +  },
   "dependencies": {
-    "e2e-stories": "^0.1.3"
+    "e2e-stories": "^0.1.6"
   }
 }
 ```
@@ -89,7 +89,7 @@ convertStories({
     "testRunner": "jest-circus/runner"
   },
   "dependencies": {
-    "e2e-stories": "^0.1.3"
+    "e2e-stories": "^0.1.6"
   }
 }
 ```
