@@ -177,3 +177,5 @@ Inside **steps** you can use the following commands:
 
 * Use them in tests simply by including e.g. `${process.env.URL}`
 
+### Example Repository
+* If you want to look at some examples how e2e-stories should be used, feel free to check out this cool repo: [example-e2e-stories](https://github.com/efraim9/example-e2e-stories)
