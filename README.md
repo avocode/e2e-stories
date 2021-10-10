@@ -141,7 +141,7 @@ Inside **steps** you can use the following commands:
   * You can nest components, so you can reference a component inside a component.
   * Example of simple component - `login.component`
   * Also it's possible to pass options to components like this:
-    * `login.component#username=${bestTesterEver}#pass=${process.env.PASS}`
+    * `login.component#username=bestTesterEver#pass=qwertyIsStrong123`
     * You can reference those options like regular variables.
 * **visit** - `URL` - `String`.
 * **click** - [Selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) - `String`.
