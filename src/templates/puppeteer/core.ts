@@ -5,7 +5,7 @@ import convertMethods from "./convertMethods"
 import sharedConvertMethods from "../../shared/convertMethods"
 import Utils from "../../core/utils"
 import sharedUtils from "../../shared/utils"
-import { StoryComponent, Story, CoreI } from '../../core/types'
+import { Story, CoreI } from '../../core/types'
 import Joi from 'joi'
 
 export default class Core implements CoreI {
