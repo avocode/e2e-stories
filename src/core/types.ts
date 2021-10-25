@@ -386,7 +386,3 @@ export type KeyInput =
   | 'EndCall'
   | 'VolumeDown'
   | 'VolumeUp';
-
-/**
- * Joi fucked up stuff because they cant make types annotation
-*/
